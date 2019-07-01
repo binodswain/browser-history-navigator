@@ -1,0 +1,26 @@
+[
+    {
+        "pageTitle": "Posts",
+        "fetchurl": "https://jsonplaceholder.typicode.com/posts/1",
+        "url":"/Posts",
+        "docUrl":""
+    },
+    {
+        "pageTitle": "Comments",
+        "fetchurl": "https://jsonplaceholder.typicode.com/comments/1",
+        "url":"/Comments",
+        "docUrl":""
+    },
+    {
+        "pageTitle": "Albums",
+        "fetchurl": "https://jsonplaceholder.typicode.com/albums/1",
+        "url":"/Albums",
+        "docUrl":""
+    },
+    {
+        "pageTitle": "User",
+        "fetchurl": "https://jsonplaceholder.typicode.com/users/1",
+        "url":"/User",
+        "docUrl":""
+    }
+]
