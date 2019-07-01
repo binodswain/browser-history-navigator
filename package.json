@@ -1,0 +1,19 @@
+{
+  "name": "browser-history-navigator",
+  "version": "1.0.0",
+  "description": "manipulates browser history and navigates to different module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browser",
+    "browserhistory",
+    "history",
+    "ajax",
+    "nav",
+    "navigation"
+  ],
+  "author": "“Binod <binodkumarswain94@gmail.com> (binodswain@github.io)",
+  "license": "MIT"
+}
