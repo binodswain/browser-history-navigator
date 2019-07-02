@@ -16,7 +16,7 @@ function browserhistory({ updateDataFunc }) {
          * @property title    [string] document title
          */
         let pageState = {
-            url, // partial url,
+            url, // partial url that is appended to page url,
             fetchurl, // url to fetch the data for the page
             docUrl: docUrl || window.location.href, //full page url
             title: pageTitle || window.document.title // title of the page
@@ -48,7 +48,7 @@ function browserhistory({ updateDataFunc }) {
             fetchurl, url
         } = stateObj;
 
-        fetch(fetchurl || url)
+        (fetchurl || url) && fetch(fetchurl || url)
             .then(response => response.json())
             .then(json => {
                 if (this.updateDataFunc) {
