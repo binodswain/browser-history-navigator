@@ -6,9 +6,11 @@ const routes = require('./routes.json');
 let index = -1;
 let data = null;
 let div = document.getElementById('datasection');
+let button = document.getElementById('continue');
+button.addEventListener('click', goNext);
 
 let browser_history = new browserHistoryNav({
-    updateDataFunc: setData
+    updateDataFunc: setData // callback function to get new data
 })
 
 function fetchData(url) {
@@ -23,7 +25,6 @@ function fetchData(url) {
 
 
 function setData(new_data) {
-    console.log("new_data", new_data);
     data = new_data;
     updateUI();
 }
@@ -35,12 +36,10 @@ function updateUI() {
 function goNext() {
     index++;
     if (index==4) {
-        return
+        return;
     }
     fetchData(routes[index]['fetchurl'] || routes[index]['url']);
 }
 
-let button = document.getElementById('continue');
 
-button.addEventListener('click', goNext);
 
