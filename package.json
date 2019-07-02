@@ -1,10 +1,14 @@
 {
   "name": "browser-history-navigator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "manipulates browser history and navigates to different module.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binodswain/browser-history-navigator.git"
   },
   "keywords": [
     "browser",
@@ -14,6 +18,7 @@
     "nav",
     "navigation"
   ],
+  "homepage": "https://github.com/binodswain/browser-history-navigator#readme",
   "author": "“Binod <binodkumarswain94@gmail.com> (binodswain@github.io)",
   "license": "MIT"
 }
